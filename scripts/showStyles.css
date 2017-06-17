@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'MyWebFont';
+    src: url('Roboto-Light.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'MyWebFont', Fallback, sans-serif;
+}
+
+
+.horizontalDiv {
+    display: inline-block;
+    float:left;
+    background-color: #E4F1FE;
+    margin: 15px;
+    max-width:250px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    
+}
+
+.navbarDiv {
+    padding-right: auto;
+    padding-left: auto;
+    align-items: center;
+    align-content: center;
+}
+
+.bookNowDiv {
+   background-color: #9B59B6;
+    border-radius: 1%;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+#menu:hover {
+    opacity: 2.5;
+    background-color: #8E44AD;
+}
+
+.categoriesDiv {
+    display: inline-block;
+    float:left;
+    background-color: #E4F1FE;
+    margin: 2px;
+}
+
+.rcorners2 {
+    border-radius: 15px;
+    border: 1px solid #22A7F0;
+    padding: 2px; 
+    font-size: 10px;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    background: #fff;
+    border: 1px solid #22A7F0;
+    color: #22A7F0;
+    text-align: center;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+

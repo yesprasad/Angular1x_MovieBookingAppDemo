@@ -1,0 +1,56 @@
+<div id="divShowMoviesTemplateRoot" class='container'>
+      <section align='center' >
+                <ul class="nav nav-pills">
+                    <li ng-class="{active:isSet(1)}">
+                        <a href ng-click="setTab(1)">Now Showing</a>
+                    </li>
+                      <li ng-class="{active:isSet(2)}">
+                          <a href ng-click="setTab(2)">Upcoming</a>
+                    </li>
+                    </ul>
+                </section>
+    
+    
+    
+
+   
+    
+</div>
+
+
+<div ng-repeat='m in nowShowingMovies' class="horizontalDiv">
+          
+          <table>
+          <tr>
+              <td>
+              <div id="verticalDiv">
+          <img class='img-circle' width='150px' height='150px' ng-src="{{m.movieImage}}"/>
+          <h4 ng-bind='m.movieName' align='center'></h4>
+          </div>
+          
+              </td>
+              </tr>
+              <tr>
+              <td>
+                  <p ng-bind='m.language' align='center'></p>
+                  </td>
+              </tr>
+              <tr>
+              <td>
+                  <a href="/categories/c">
+                    <div ng-repeat='c in m.categories' class="categoriesDiv">
+                      <p class="rcorners2" ng-bind='c' align='center'></p>
+                    </div>
+                </a>
+                  </td>
+              </tr>
+              <tr>
+              <td>
+                  <a href="">
+              <div class='bookNowDiv' id="menu">
+               Book Now
+              </div></a>
+                  </td>
+              </tr>
+          </table>
+</div>
